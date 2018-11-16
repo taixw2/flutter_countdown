@@ -78,6 +78,7 @@ class CounDownState extends State<CountDown> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return CupertinoButton(
       onPressed: () => _beginCountIfNeed(_controller),
+      padding: const EdgeInsets.all(0),
       child: _Countdown(
         renderSemanticLabel: (count) => widget.renderSemanticLabel(count),
         animation: new StepTween(
