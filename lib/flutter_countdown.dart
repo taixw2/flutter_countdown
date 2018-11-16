@@ -21,14 +21,12 @@ class _Countdown extends AnimatedWidget {
 class CountDown extends StatefulWidget {
   final int beginCount;
   final int endCount;
-  final String semanticLabel;
-  final String defaultSemanticLabel;
   final String Function(int number) renderSemanticLabel;
   final void Function(AnimationController refs) refs;
   final Future<bool> Function(AnimationController ctr) onPress;
   final AnimationStatusListener statusListener;
 
-  CountDown({this.semanticLabel, this.defaultSemanticLabel, this.beginCount,
+  CountDown({this.beginCount,
       this.endCount, this.statusListener, this.refs, this.onPress, this.renderSemanticLabel});
 
   @override
