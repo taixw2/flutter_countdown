@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_countdown/countdown.dart';
+import 'package:flutter_countdown/flutter_countdown.dart';
 
 void main() {
   testWidgets('test widget', (WidgetTester tester) async {

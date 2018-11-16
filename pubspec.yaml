@@ -1,8 +1,8 @@
 name: flutter_countdown
 description: An easy way to use count down.
 version: 0.1.0
-author: iqqq
-homepage:
+author: iqqq<fex@0000o.net>
+homepage: https://github.com/taixw2/flutter_countdown
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
