@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'flutter_countdown.dart';
+import 'package:flutter_countdown/flutter_countdown.dart';
 
 const int BEGIN_COUNT = 60;
 const int END_COUNT = 0;
@@ -20,12 +20,13 @@ class _ExampleState extends State<Example> {
     if (ctr.isAnimating) {
       return Future.value(false);
     }
+    // todo: something
     return Future.value(true);
   }
 
   _countDownStatusListener(AnimationStatus state) {
     if (state == AnimationStatus.forward) {
-      // _controller?.stop(canceled: true);
+      _controller?.stop(canceled: true);
     }
   }
   
@@ -48,6 +49,6 @@ class _ExampleState extends State<Example> {
           refs: (ctr) { _controller = ctr; },
         )
       )),
-    );;
+    );
     }
 }
