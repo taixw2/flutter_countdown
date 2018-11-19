@@ -38,7 +38,7 @@ class _ExampleState extends State<Example> {
         child: CountDown(
           beginCount: BEGIN_COUNT,
           endCount: END_COUNT,
-          renderSemanticLabel: (count) {
+          renderLabel: (count) {
             if (count == BEGIN_COUNT) {
               return DEFAULT_LABEL;
             }
