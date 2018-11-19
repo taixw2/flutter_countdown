@@ -1,6 +1,6 @@
 name: flutter_countdown
-description: An easy way to use count down.
-version: 0.1.2
+description: flutter_countdown is a flutter library for simple start countdown via a Widget
+version: 0.1.3
 author: iqqq<fex@0000o.net>
 homepage: https://github.com/taixw2/flutter_countdown
 

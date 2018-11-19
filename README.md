@@ -11,7 +11,7 @@ An easy way to use count down
       sdk: flutter
     # ...
     # ...
-    flutter_countdown: ^0.1.0
+    flutter_countdown: ^0.1.3
 ```
 
 2. install it from terminal: Run `flutter packages get`
