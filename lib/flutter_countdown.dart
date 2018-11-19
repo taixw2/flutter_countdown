@@ -94,10 +94,9 @@ class CounDownState extends State<CountDown> with TickerProviderStateMixin {
       child: _Countdown(
         renderLabel: (count) {
           if (widget.renderLabel != null) {
-            widget.renderLabel(count);
-            return;
+            return widget.renderLabel(count);
           }
-          widget.renderSemanticLabel(count);
+          return widget.renderSemanticLabel(count);
         },
         animation: new StepTween(
           begin: widget.beginCount,
