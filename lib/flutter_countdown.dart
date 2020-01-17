@@ -33,6 +33,7 @@ class CountDown extends StatefulWidget {
   final void Function(AnimationController refs) refs;
   final Future<bool> Function(AnimationController ctr) onPress;
   final AnimationStatusListener statusListener;
+  final TextStyle textStyle;
 
   CountDown(
       {this.beginCount,
@@ -41,6 +42,7 @@ class CountDown extends StatefulWidget {
       this.refs,
       this.onPress,
       this.renderLabel,
+      this.textStyle,
       this.renderSemanticLabel});
 
   @override
@@ -98,6 +100,7 @@ class CounDownState extends State<CountDown> with TickerProviderStateMixin {
           }
           return widget.renderSemanticLabel(count);
         },
+        textStyle: widget.textStyle,
         animation: new StepTween(
           begin: widget.beginCount,
           end: widget.endCount,
