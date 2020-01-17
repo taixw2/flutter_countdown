@@ -90,9 +90,8 @@ class CounDownState extends State<CountDown> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return CupertinoButton(
-      onPressed: () => _beginCountIfNeed(_controller),
-      padding: const EdgeInsets.all(0),
+    return GestureDetector(
+      onTap: () => _beginCountIfNeed(_controller),
       child: _Countdown(
         renderLabel: (count) {
           if (widget.renderLabel != null) {
