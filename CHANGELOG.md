@@ -14,3 +14,7 @@
 
 * renderSemanticLabel => renderLabel
 * renderSemanticLabel is deprecated and shouldn't be used.
+
+## [0.1.5] - 2020-02-19 11:56:52
+
+* New textStyle function
